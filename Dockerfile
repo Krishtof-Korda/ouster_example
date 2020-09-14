@@ -28,6 +28,7 @@ RUN apt-get update \
     libx11-6 \
     libtclap-dev \
     libglew-dev \
+    libglfw3-dev \
     libtclap-dev \
     tmux \
     xdg-utils \
