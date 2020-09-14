@@ -7,7 +7,7 @@ source $SCRIPT_DIR/identify_environment.bash
 if [ ! -d "$HOME/catkin_ws/src/ouster_example" ]; then
     echo "ouster_example repository not detected"
     cd "$HOME/catkin_ws/src"
-    git clone https://github.com/Krishtof-Korda/ouster_example.git
+    git clone --single-branch --branch kk/128-support https://github.com/Krishtof-Korda/ouster_example.git
 #    cd "$HOME/catkin_ws"
 #    catkin build --no-status
 #    echo "Package built successfully"
