@@ -16,6 +16,7 @@ echo "Installing additional ROS $ROS_DISTRO packages ..."
 
 sudo apt-get -qq install \
 ros-$ROS_DISTRO-rviz \
+ros-$ROS_DISTRO-roscpp \
 ros-$ROS_DISTRO-pcl-ros \
 ros-$ROS_DISTRO-tf2-geometry-msgs \
 ros-$ROS_DISTRO-gazebo-* \
