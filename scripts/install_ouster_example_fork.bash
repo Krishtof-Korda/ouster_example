@@ -15,6 +15,9 @@ else
     echo "ouster_example already installed"
 fi
 
+# Set cmake prefix path
+export CMAKE_PREFIX_PATH=$HOME/catkin_ws/src/ouster_example/
+
 # Building the Sample Client
 echo "building the sample client"
 cd $HOME/catkin_ws/src/ouster_example/ouster_client
