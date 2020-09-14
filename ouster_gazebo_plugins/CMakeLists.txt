@@ -4,7 +4,7 @@ project(ouster_gazebo_plugins)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
-  tf
+  tf2
   gazebo_ros
 )
 find_package(gazebo REQUIRED)
