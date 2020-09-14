@@ -33,6 +33,7 @@ RUN apt-get update \
     libtclap-dev \
     tmux \
     xdg-utils \
+    xorg \
     eog \
  && rm -rf /var/lib/apt/lists/*
 
