@@ -38,8 +38,9 @@ echo "visualizer built successfully"
 
 #Building the Sample ROS Node
 echo "building the sample ROS node"
+source /opt/ros/melodic/setup.bash
 cd $HOME/catkin_ws
-catkin_make
+catkin_make -DCMAKE_BUILD_TYPE=Release
 echo "built the sample ROS node"
 
 # Source the workspace
