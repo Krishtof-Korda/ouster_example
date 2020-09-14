@@ -14,7 +14,17 @@ sudo apt-get -qq update
 
 echo "Installing additional ROS $ROS_DISTRO packages ..."
 
-sudo apt-get -qq install ros-$ROS_DISTRO-rviz ros-$ROS_DISTRO-gazebo-* ros-$ROS_DISTRO-joint-state-publisher ros-$ROS_DISTRO-robot-state-publisher ros-$ROS_DISTRO-xacro ros-$ROS_DISTRO-controller-manager ros-$ROS_DISTRO-joint-state-controller ros-$ROS_DISTRO-ros-control > /dev/null
+sudo apt-get -qq install \
+ros-$ROS_DISTRO-rviz \
+ros-$ROS_DISTRO-pcl-ros \
+ros-$ROS_DISTRO-tf2-geometry-msgs \
+ros-$ROS_DISTRO-gazebo-* \
+ros-$ROS_DISTRO-joint-state-publisher \
+ros-$ROS_DISTRO-robot-state-publisher \
+ros-$ROS_DISTRO-xacro \
+ros-$ROS_DISTRO-controller-manager \
+ros-$ROS_DISTRO-joint-state-controller \
+ros-$ROS_DISTRO-ros-control > /dev/null
 
 source /opt/ros/$ROS_DISTRO/setup.bash
 

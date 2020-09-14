@@ -137,7 +137,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.029999999329447746
       Style: Flat Squares
-      Topic: /os1_node/points
+      Topic: /os_node/points
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true

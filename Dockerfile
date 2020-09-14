@@ -26,6 +26,9 @@ RUN apt-get update \
     libxcb1 \
     libxext6 \
     libx11-6 \
+    libtclap-dev \
+    libglew-dev \
+    libtclap-dev \
     tmux \
     xdg-utils \
     eog \

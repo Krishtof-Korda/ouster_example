@@ -8,7 +8,7 @@
    </include>
 
    <test test-name="os1GazeboHzTest_points" pkg="rostest" type="hztest" name="pointsHz">
-      <param name="topic" value="/os1_cloud_node/points" />
+      <param name="topic" value="/os_cloud_node/points" />
       <param name="hz" value="10" />
       <param name="hzerror" value="9" />
       <param name="test_duration" value="10.0" />
@@ -16,7 +16,7 @@
    </test>
 
    <test test-name="os1GazeboHzTest_imu" pkg="rostest" type="hztest" name="imuHz">
-      <param name="topic" value="/os1_cloud_node/imu" />
+      <param name="topic" value="/os_cloud_node/imu" />
       <param name="hz" value="100" />
       <param name="hzerror" value="50" />
       <param name="test_duration" value="10.0" />
