@@ -13,7 +13,7 @@
 
     <model name="os-1-128">
       <!-- Give the base link a unique name -->
-      <link name="os1_lidar">
+      <link name="os_lidar">
 
         <pose>0 0 0.0365 0 0 0</pose>
 

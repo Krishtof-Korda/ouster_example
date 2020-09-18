@@ -65,7 +65,7 @@ Visualization Manager:
           Value: true
         os1:
           Value: true
-        os1_imu:
+        os_imu:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -78,7 +78,7 @@ Visualization Manager:
             base_link:
               os1:
                 {}
-              os1_imu:
+              os_imu:
                 {}
       Update Interval: 0
       Value: true
@@ -101,7 +101,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        os1_imu:
+        os_imu:
           Alpha: 1
           Show Axes: false
           Show Trail: false

@@ -121,9 +121,9 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
-        os1_imu:
+        os_imu:
           Value: false
-        os1_lidar:
+        os_lidar:
           Value: false
         os1_sensor:
           Value: true
@@ -134,9 +134,9 @@ Visualization Manager:
       Show Names: true
       Tree:
         os1_sensor:
-          os1_imu:
+          os_imu:
             {}
-          os1_lidar:
+          os_lidar:
             {}
       Update Interval: 0
       Value: true

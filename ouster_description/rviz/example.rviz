@@ -58,9 +58,9 @@ Visualization Manager:
           Value: true
         base_link:
           Value: true
-        os1_imu:
+        os_imu:
           Value: true
-        os1_lidar:
+        os_lidar:
           Value: true
         os1_sensor:
           Value: true
@@ -73,9 +73,9 @@ Visualization Manager:
         base_footprint:
           base_link:
             os1_sensor:
-              os1_imu:
+              os_imu:
                 {}
-              os1_lidar:
+              os_lidar:
                 {}
       Update Interval: 0
       Value: true
@@ -98,11 +98,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        os1_imu:
+        os_imu:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        os1_lidar:
+        os_lidar:
           Alpha: 1
           Show Axes: false
           Show Trail: false
