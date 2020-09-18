@@ -25,7 +25,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: OS1-64
+    SyncSource: OS-128
 Preferences:
   PromptSaveOnExit: true
 Visualization Manager:
@@ -62,7 +62,7 @@ Visualization Manager:
           Value: true
         os_lidar:
           Value: true
-        os1_sensor:
+        os_sensor:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -72,7 +72,7 @@ Visualization Manager:
       Tree:
         base_footprint:
           base_link:
-            os1_sensor:
+            os_sensor:
               os_imu:
                 {}
               os_lidar:
@@ -106,7 +106,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        os1_sensor:
+        os_sensor:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -135,14 +135,14 @@ Visualization Manager:
       Max Intensity: -999999
       Min Color: 0; 0; 0
       Min Intensity: 999999
-      Name: OS1-64
+      Name: OS-128
       Position Transformer: XYZ
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
       Size (m): 0.009999999776482582
       Style: Flat Squares
-      Topic: /os1_cloud_node/points
+      Topic: /os_cloud_node/points
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true

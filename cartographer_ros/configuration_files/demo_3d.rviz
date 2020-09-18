@@ -63,7 +63,7 @@ Visualization Manager:
           Value: true
         odom:
           Value: true
-        os1:
+        os:
           Value: true
         os_imu:
           Value: true
@@ -76,7 +76,7 @@ Visualization Manager:
         map:
           odom:
             base_link:
-              os1:
+              os:
                 {}
               os_imu:
                 {}
@@ -96,7 +96,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        os1:
+        os:
           Alpha: 1
           Show Axes: false
           Show Trail: false

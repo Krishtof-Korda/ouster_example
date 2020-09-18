@@ -11,5 +11,5 @@ install(DIRECTORY launch meshes rviz urdf worlds
 
 if (CATKIN_ENABLE_TESTING)
   find_package(rostest REQUIRED)
-  add_rostest(tests/os1_gazebo.test)
+  add_rostest(tests/os_gazebo.test)
 endif()

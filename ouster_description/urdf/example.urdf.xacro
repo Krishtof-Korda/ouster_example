@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="os1_example">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="os_example">
 
   <!-- Base Footprint -->
   <link name="base_footprint" />
@@ -30,9 +30,9 @@
     </inertial>
   </link>
 
-  <xacro:include filename="$(find ouster_description)/urdf/OS1-64.urdf.xacro"/>
-  <OS1-64 parent="base_link" name="os1_sensor" hz="10" samples="220">
+  <xacro:include filename="$(find ouster_description)/urdf/OS-128.urdf.xacro"/>
+  <OS-128 parent="base_link" name="os_sensor" hz="10" samples="220">
     <origin xyz="0 0 1.2" rpy="0 0 0" />
-  </OS1-64>
+  </OS-128>
 
 </robot>

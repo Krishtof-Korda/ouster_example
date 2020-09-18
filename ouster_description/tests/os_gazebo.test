@@ -2,12 +2,12 @@
 
 <launch>
 
-   <include file="$(find ouster_description)/launch/os1_world.launch">
+   <include file="$(find ouster_description)/launch/os_world.launch">
       <arg name="gui" default="false"/>
       <arg name="rviz" default="false"/>
    </include>
 
-   <test test-name="os1GazeboHzTest_points" pkg="rostest" type="hztest" name="pointsHz">
+   <test test-name="osGazeboHzTest_points" pkg="rostest" type="hztest" name="pointsHz">
       <param name="topic" value="/os_cloud_node/points" />
       <param name="hz" value="10" />
       <param name="hzerror" value="9" />
@@ -15,7 +15,7 @@
       <param name="wait_time" value="30.0" />
    </test>
 
-   <test test-name="os1GazeboHzTest_imu" pkg="rostest" type="hztest" name="imuHz">
+   <test test-name="osGazeboHzTest_imu" pkg="rostest" type="hztest" name="imuHz">
       <param name="topic" value="/os_cloud_node/imu" />
       <param name="hz" value="100" />
       <param name="hzerror" value="50" />
@@ -23,7 +23,7 @@
       <param name="wait_time" value="30.0" />
    </test>
 
-   <test test-name="os1GazeboPublishTest_tf" pkg="rostest" type="publishtest" name="tfPublish">
+   <test test-name="osGazeboPublishTest_tf" pkg="rostest" type="publishtest" name="tfPublish">
     <rosparam>
       topics:
         - name: /tf_static
@@ -33,7 +33,7 @@
    </test>
 
 
-   <test test-name="os1GazeboParamTest_robot_description" pkg="rostest" type="paramtest" name="robot_descriptionParam" >
+   <test test-name="osGazeboParamTest_robot_description" pkg="rostest" type="paramtest" name="robot_descriptionParam" >
       <param name="param_name_target" value="robot_description" />
       <param name="test_duration" value="10.0" />
       <param name="wait_time" value="30.0" />

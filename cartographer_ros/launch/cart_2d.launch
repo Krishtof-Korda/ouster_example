@@ -16,7 +16,7 @@
 
 <launch>
   <param name="robot_description"
-    textfile="$(find ouster_ros)/../../ouster_example/cartographer_ros/urdf/os1_sensor.urdf" />
+    textfile="$(find ouster_ros)/../../ouster_example/cartographer_ros/urdf/os_sensor.urdf" />
 
   <node name="robot_state_publisher" pkg="robot_state_publisher"
     type="robot_state_publisher" />
