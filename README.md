@@ -3,7 +3,7 @@
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Krishtof-Korda/ouster_example_cartographer/blob/master/LICENSE)
 
 
-Sample code for connecting to and configuring the Ouster, reading and visualizing
+Sample code for doing SLAM with an Ouster sensor. Also includes example code for connecting to and configuring the Ouster sensor, reading and visualizing
 data, and interfacing with ROS.
 
 See the `README.md` in each subdirectory for details.
