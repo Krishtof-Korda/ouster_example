@@ -1,7 +1,7 @@
 #!/bin/bash
 
 xhost +local:root
-IMG=kbearrk/ouster_example_128:working
+IMG=kbearrk/ouster_example_cartographer:latest
 
 # If NVIDIA is present, use Nvidia-docker
 if test -c /dev/nvidia0
