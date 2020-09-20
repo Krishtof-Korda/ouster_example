@@ -24,7 +24,18 @@ else
       bash
 fi
 
-# Google Cartographer commands
+## Docker nvidia troubleshooting 
+
+# Stop docker before running 'sudo dockerd --add-runtime=nvidia=/usr/bin/nvidia-container-runtime'
+# sudo systemctl stop docker
+
+# Change mode of docker.sock if you have a permission issue
+# sudo chmod 666 /var/run/docker.sock
+
+# Add the nvidia runtime to allow docker to use nvidia GPU
+# sudo dockerd --add-runtime=nvidia=/usr/bin/nvidia-container-runtime
+
+## Google Cartographer commands
 
 # Get sample data
 # cd /root/bags
