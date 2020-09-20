@@ -7,3 +7,4 @@ install/
 *.bag
 doc/
 data/
+.idea/
