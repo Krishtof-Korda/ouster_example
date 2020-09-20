@@ -39,7 +39,7 @@ fi
 
 # Get sample data
 # cd /root/bags
-# curl -O https://data.ouster.io/downloads/office_demo_9_25_19.bag 
+# curl -O https://data.ouster.io/downloads/os1_townhomes_cartographer.bag 
 
 # Source the workspace
 # source /root/catkin_ws/devel/setup.bash
@@ -48,30 +48,31 @@ fi
 # cd /root/catkin_ws/src/ouster_example/cartogrpaher_ros/launch
 
 ## Validate rosbag
-#rosrun cartographer_ros cartographer_rosbag_validate -bag_filename /root/bags/office_demo_9_25_19.bag
+#rosrun cartographer_ros cartographer_rosbag_validate -bag_filename /root/bags/os1_townhomes_cartographer.bag
 
 ## Run 2D online
-# roslaunch demo_cart_2d.launch bag_filename:=/root/bags/office_demo_9_25_19.bag
+# roslaunch demo_cart_2d.launch bag_filename:=/root/bags/os1_townhomes_cartographer.bag
 
 ## Run 2D offline (to generate .pbstream file)
-# roslaunch offline_cart_2d.launch bag_filenames:=/root/bags/office_demo_9_25_19.bag
+# roslaunch offline_cart_2d.launch bag_filenames:=/root/bags/os1_townhomes_cartographer.bag
 
 ## Run 2D assets_writer
-# roslaunch assets_writer_cart_2d.launch bag_filenames:=/root/bags/office_demo_9_25_19.bag  pose_graph_filename:=/root/bags/office_demo_9_25_19.bag.pbstream 
+# roslaunch assets_writer_cart_2d.launch bag_filenames:=/root/bags/os1_townhomes_cartographer.bag  pose_graph_filename:=/root/bags/os1_townhomes_cartographer.bag.pbstream 
 
 ## View output pngs
-# xdg-open office_demo_9_25_19.bag_xray_xy_all.png
-# xdg-open office_demo_9_25_19.bag_probability_grid.png
+# xdg-open os1_townhomes_cartographer.bag_xray_xy_all.png
+# xdg-open os1_townhomes_cartographer.bag_probability_grid.png
 
-## Run 3d online
-# roslaunch demo_cart_3d.launch bag_filename:=/root/bags/office_demo_9_25_19.bag
+## Run 3D online
+# roslaunch demo_cart_3d.launch bag_filename:=/root/bags/os1_townhomes_cartographer.bag
 
-## Run 3d offline
-# roslaunch offline_cart_3d.launch bag_filenames:=/root/bags/office_demo_9_25_19.bag 
+## Run 3D offline
+# roslaunch offline_cart_3d.launch bag_filenames:=/root/bags/os1_townhomes_cartographer.bag 
 
-## Run 3d assets_writer
-# roslaunch assets_writer_cart_3d.launch bag_filenames:=/root/bags/office_demo_9_25_19.bag  pose_graph_filename:=/root/bags/office_demo_9_25_19.bag.pbstream 
+## Run 3D assets_writer
+# roslaunch assets_writer_cart_3d.launch bag_filenames:=/root/bags/os1_townhomes_cartographer.bag  pose_graph_filename:=/root/bags/os1_townhomes_cartographer.bag.pbstream 
 
-# xdg-open office_demo_9_25_19.bag_xray_xy_all.png
-# xdg-open office_demo_9_25_19.bag_probability_grid.png
+## Open image assets from assets_writer
+# xdg-open os1_townhomes_cartographer.bag_xray_xy_all.png
+# xdg-open os1_townhomes_cartographer.bag_probability_grid.png
 
