@@ -25,7 +25,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: OS-128
+    SyncSource: OUSTER
 Preferences:
   PromptSaveOnExit: true
 Visualization Manager:
@@ -135,7 +135,7 @@ Visualization Manager:
       Max Intensity: -999999
       Min Color: 0; 0; 0
       Min Intensity: 999999
-      Name: OS-128
+      Name: OUSTER
       Position Transformer: XYZ
       Queue Size: 10
       Selectable: true

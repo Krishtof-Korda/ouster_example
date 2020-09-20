@@ -11,7 +11,7 @@
       <uri>model://ground_plane</uri>
     </include>
 
-    <model name="os-128">
+    <model name="OUSTER">
       <!-- Give the base link a unique name -->
       <link name="os_lidar">
 
@@ -43,7 +43,7 @@
           <geometry>
             <!--
             <mesh>     
-              <uri>package://ouster_description/meshes/os_128.dae</uri>
+              <uri>package://ouster_description/meshes/os_sensor.dae</uri>
             </mesh>
             -->
             
