@@ -51,8 +51,3 @@ then
     docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
 
 fi
-
-# Docker nvidia troubleshooting
-# sudo systemctl stop docker
-# sudo chmod 666 /var/run/docker.sock
-# sudo dockerd --add-runtime=nvidia=/usr/bin/nvidia-container-runtime
