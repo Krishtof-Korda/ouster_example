@@ -24,11 +24,11 @@
       type="cartographer_offline_node" args="
           -configuration_directory $(find ouster_ros)/../../ouster_example/cartographer_ros/configuration_files
           -configuration_basenames cart_3d.lua
-          -urdf_filenames $(find ouster_ros)/../../ouster_example/cartographer_ros/urdf/os1_sensor.urdf
+          -urdf_filenames $(find ouster_ros)/../../ouster_example/cartographer_ros/urdf/os_sensor.urdf
           -bag_filenames $(arg bag_filenames)"
       output="screen">
-    <remap from="points2" to="/os1_cloud_node/points" />
-    <remap from="imu" to="/os1_cloud_node/imu" />
+    <remap from="points2" to="/os_cloud_node/points" />
+    <remap from="imu" to="/os_cloud_node/imu" />
   </node>
 
   <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"

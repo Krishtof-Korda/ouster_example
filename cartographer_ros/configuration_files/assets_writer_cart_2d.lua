@@ -22,7 +22,7 @@ VOXEL_SIZE = 5e-2
 include "transform.lua"
 
 options = {
-  tracking_frame = "os1_imu",
+  tracking_frame = "os_imu",
   pipeline = {
     {
       action = "min_max_range_filter",

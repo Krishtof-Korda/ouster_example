@@ -7,13 +7,16 @@ source $SCRIPT_DIR/identify_environment.bash
 if [ ! -d "$HOME/catkin_ws/src/ouster_example" ]; then
     echo "ouster_example repository not detected"
     cd "$HOME/catkin_ws/src"
-    git clone https://github.com/wilselby/ouster_example.git
+    git clone --single-branch --branch kk/128-support https://github.com/Krishtof-Korda/ouster_example.git
 #    cd "$HOME/catkin_ws"
 #    catkin build --no-status
 #    echo "Package built successfully"
 else
     echo "ouster_example already installed"
 fi
+
+# Set cmake prefix path
+export CMAKE_PREFIX_PATH=$HOME/catkin_ws/src/ouster_example/
 
 # Building the Sample Client
 echo "building the sample client"
@@ -35,8 +38,9 @@ echo "visualizer built successfully"
 
 #Building the Sample ROS Node
 echo "building the sample ROS node"
+source /opt/ros/melodic/setup.bash
 cd $HOME/catkin_ws
-catkin_make
+catkin_make -DCMAKE_BUILD_TYPE=Release
 echo "built the sample ROS node"
 
 # Source the workspace

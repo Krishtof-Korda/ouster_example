@@ -10,6 +10,7 @@ RUN apt-get update \
   && apt-get dist-upgrade -y \
   && apt-get install -y --no-install-recommends \
     git \
+    neovim \
     build-essential \
     dialog \
     make \
@@ -26,8 +27,13 @@ RUN apt-get update \
     libxcb1 \
     libxext6 \
     libx11-6 \
+    libtclap-dev \
+    libglew-dev \
+    libglfw3-dev \
+    libtclap-dev \
     tmux \
     xdg-utils \
+    xorg \
     eog \
  && rm -rf /var/lib/apt/lists/*
 

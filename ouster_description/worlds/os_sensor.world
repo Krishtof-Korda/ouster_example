@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <model name="OUSTER">
+      <!-- Give the base link a unique name -->
+      <link name="os_lidar">
+
+        <pose>0 0 0.0365 0 0 0</pose>
+
+        <inertial>
+          <mass>0.33</mass>
+          <inertia>
+            <ixx>0.000241148</ixx>
+            <iyy>0.000241148</iyy>
+            <izz>0.000264</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+
+        <collision name="base_collision">
+          <geometry>
+            <cylinder>
+              <radius>0.0425</radius>
+              <length>0.073</length>
+            </cylinder>
+          </geometry>
+        </collision>
+
+        <!-- The visual is mostly a copy of the collision -->
+        <visual name="base_visual">
+          <geometry>
+            <!--
+            <mesh>     
+              <uri>package://ouster_description/meshes/os_sensor.dae</uri>
+            </mesh>
+            -->
+            
+            <cylinder>
+              <radius>0.0425</radius>
+              <length>0.073</length>
+            </cylinder>
+          
+          </geometry>
+        </visual>
+      </link>
+    </model>
+  </world>
+</sdf>
+

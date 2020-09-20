@@ -63,9 +63,9 @@ Visualization Manager:
           Value: true
         odom:
           Value: true
-        os1:
+        os:
           Value: true
-        os1_imu:
+        os_imu:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -76,9 +76,9 @@ Visualization Manager:
         map:
           odom:
             base_link:
-              os1:
+              os:
                 {}
-              os1_imu:
+              os_imu:
                 {}
       Update Interval: 0
       Value: true
@@ -96,12 +96,12 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        os1:
+        os:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        os1_imu:
+        os_imu:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -137,7 +137,7 @@ Visualization Manager:
       Size (Pixels): 3
       Size (m): 0.029999999329447746
       Style: Flat Squares
-      Topic: /os1_node/points
+      Topic: /os_node/points
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
