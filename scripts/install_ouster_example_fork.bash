@@ -4,23 +4,23 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # get UBUNTU_CODENAME, ROS_DISTRO, REPO_DIR, CATKIN_DIR
 source $SCRIPT_DIR/identify_environment.bash
 
-if [ ! -d "$HOME/catkin_ws/src/ouster_example" ]; then
-    echo "ouster_example repository not detected"
+if [ ! -d "$HOME/catkin_ws/src/ouster_example_cartographer" ]; then
+    echo "ouster_example_cartographer repository not detected"
     cd "$HOME/catkin_ws/src"
-    git clone --single-branch --branch kk/128-support https://github.com/Krishtof-Korda/ouster_example.git
+    git clone https://github.com/Krishtof-Korda/ouster_example_cartographer.git
 #    cd "$HOME/catkin_ws"
 #    catkin build --no-status
 #    echo "Package built successfully"
 else
-    echo "ouster_example already installed"
+    echo "ouster_example_cartographer already installed"
 fi
 
 # Set cmake prefix path
-export CMAKE_PREFIX_PATH=$HOME/catkin_ws/src/ouster_example/
+export CMAKE_PREFIX_PATH=$HOME/catkin_ws/src/ouster_example_cartographer/
 
 # Building the Sample Client
 echo "building the sample client"
-cd $HOME/catkin_ws/src/ouster_example/ouster_client
+cd $HOME/catkin_ws/src/ouster_example_cartographer/ouster_client
 mkdir build
 cd build
 cmake ..
@@ -29,7 +29,7 @@ echo "sample client built successfully"
 
 # Building the Visualizer
 echo "building the visualizer"
-cd $HOME/catkin_ws/src/ouster_example/ouster_viz
+cd $HOME/catkin_ws/src/ouster_example_cartographer/ouster_viz
 mkdir build
 cd build
 cmake ..
