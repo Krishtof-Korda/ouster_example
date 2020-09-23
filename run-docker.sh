@@ -45,7 +45,7 @@ fi
 # source /root/catkin_ws/devel/setup.bash
 
 # Navigate to the cartographer_ros launch file directory
-# cd /root/catkin_ws/src/ouster_example/cartogrpaher_ros/launch
+# cd /root/catkin_ws/src/ouster_example_cartographer/cartogrpaher_ros/launch
 
 ## Validate rosbag
 #rosrun cartographer_ros cartographer_rosbag_validate -bag_filename /root/bags/os1_townhomes_cartographer.bag
