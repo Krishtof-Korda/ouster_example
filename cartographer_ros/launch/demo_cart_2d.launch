@@ -17,7 +17,7 @@
 <launch>
   <param name="/use_sim_time" value="true" />
 
-  <include file="$(find ouster_ros)/../../ouster_example/cartographer_ros/launch/cart_2d.launch" />
+  <include file="$(find ouster_ros)/../../ouster_example_cartographer/cartographer_ros/launch/cart_2d.launch" />
 
   <node name="rviz" pkg="rviz" type="rviz" required="true"
       args="-d $(find cartographer_ros)/configuration_files/demo_2d.rviz" />

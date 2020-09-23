@@ -33,14 +33,14 @@ though these are not officially supported and not yet guaranteed to build and ru
 # Building the Visualizer
 Before building, make sure all the build dependencies are installed.
 
-In the following instruction steps, `/path/to/ouster_example` is where you've cloned the repository
+In the following instruction steps, `/path/to/ouster_example_cartographer` is where you've cloned the repository
 
 ## Linux
 Run the following commmands:
 
 ```
-export CMAKE_PREFIX_PATH=/path/to/ouster_example
-cd /path/to/ouster_example/ouster_viz
+export CMAKE_PREFIX_PATH=/path/to/ouster_example_cartographer
+cd /path/to/ouster_example_cartographer/ouster_viz
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -51,8 +51,8 @@ make
 Run the following commands
 
 ```
-export CMAKE_PREFIX_PATH=/path/to/ouster_example
-cd /path/to/ouster_example/ouster_viz
+export CMAKE_PREFIX_PATH=/path/to/ouster_example_cartographer
+cd /path/to/ouster_example_cartographer/ouster_viz
 mkdir build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF ..

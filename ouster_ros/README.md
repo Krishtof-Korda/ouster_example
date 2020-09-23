@@ -10,12 +10,12 @@
   `ros-*-rviz` for visualization using ROS, where `*` is either `kinetic` or `melodic`
 
 ## Building the Sample ROS Node
-* In the following instruction steps, `/path/to/ouster_example` is where you've cloned the repository
+* In the following instruction steps, `/path/to/ouster_example_cartographer` is where you've cloned the repository
 * First install additional build dependencies: `sudo apt-get install libtclap-dev libglew-dev
   libtclap-dev`
-* Then run the following command `export CMAKE_PREFIX_PATH=/path/to/ouster_example`
+* Then run the following command `export CMAKE_PREFIX_PATH=/path/to/ouster_example_cartographer`
 * Be sure to source the ROS setup script before building: `source /opt/ros/*/setup.bash`
-* Build with `mkdir -p myworkspace/src && cd myworkspace && ln -s /path/to/ouster_example ./src/ &&
+* Build with `mkdir -p myworkspace/src && cd myworkspace && ln -s /path/to/ouster_example_cartographer ./src/ &&
   catkin_make -DCMAKE_BUILD_TYPE=Release`
 
 ## Running the Sample ROS Nodes

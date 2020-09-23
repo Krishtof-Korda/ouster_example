@@ -22,9 +22,9 @@
 
   <node name="cartographer_offline_node" pkg="cartographer_ros"
       type="cartographer_offline_node" args="
-          -configuration_directory $(find ouster_ros)/../../ouster_example/cartographer_ros/configuration_files
+          -configuration_directory $(find ouster_ros)/../../ouster_example_cartographer/cartographer_ros/configuration_files
           -configuration_basenames cart_3d.lua
-          -urdf_filenames $(find ouster_ros)/../../ouster_example/cartographer_ros/urdf/os_sensor.urdf
+          -urdf_filenames $(find ouster_ros)/../../ouster_example_cartographer/cartographer_ros/urdf/os_sensor.urdf
           -bag_filenames $(arg bag_filenames)"
       output="screen">
     <remap from="points2" to="/os_cloud_node/points" />

@@ -16,14 +16,14 @@
 
 <launch>
   <param name="robot_description"
-    textfile="$(find ouster_ros)/../../ouster_example/cartographer_ros/urdf/os_sensor.urdf" />
+    textfile="$(find ouster_ros)/../../ouster_example_cartographer/cartographer_ros/urdf/os_sensor.urdf" />
 
   <node name="robot_state_publisher" pkg="robot_state_publisher"
     type="robot_state_publisher" />
 
   <node name="cartographer_node" pkg="cartographer_ros"
       type="cartographer_node" args="
-          -configuration_directory $(find ouster_ros)/../../ouster_example/cartographer_ros/configuration_files
+          -configuration_directory $(find ouster_ros)/../../ouster_example_cartographer/cartographer_ros/configuration_files
           -configuration_basename cart_2d.lua"
       output="screen">
     <remap from="points2" to="/os_cloud_node/points" />

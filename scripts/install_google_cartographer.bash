@@ -10,11 +10,11 @@ sudo apt-get install ros-melodic-cartographer ros-melodic-cartographer-ros ros-m
 
 # Copy Configuration files to the default location (/opt/ros/melodic/share/cartographer_ros)
 echo "Copying configuration files..."
-sudo cp $HOME/catkin_ws/src/ouster_example/cartographer_ros/configuration_files/* /opt/ros/melodic/share/cartographer_ros/configuration_files/
+sudo cp $HOME/catkin_ws/src/ouster_example_cartographer/cartographer_ros/configuration_files/* /opt/ros/melodic/share/cartographer_ros/configuration_files/
 
-sudo cp $HOME/catkin_ws/src/ouster_example/cartographer_ros/launch/* /opt/ros/melodic/share/cartographer_ros/launch/
+sudo cp $HOME/catkin_ws/src/ouster_example_cartographer/cartographer_ros/launch/* /opt/ros/melodic/share/cartographer_ros/launch/
 
-sudo cp $HOME/catkin_ws/src/ouster_example/cartographer_ros/urdf/* /opt/ros/melodic/share/cartographer_ros/urdf/
+sudo cp $HOME/catkin_ws/src/ouster_example_cartographer/cartographer_ros/urdf/* /opt/ros/melodic/share/cartographer_ros/urdf/
 
 #sudo mv /bags/* ~/bags/
 #sudo rm -R /bags/
