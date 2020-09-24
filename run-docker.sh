@@ -39,7 +39,8 @@ fi
 
 # Get sample data
 # cd /root/bags
-# curl -O https://data.ouster.io/downloads/os1_townhomes_cartographer.bag 
+# curl -O https://data.ouster.io/downloads/os1_townhomes_cartographer.zip
+# unzip /root/bags/os1_townhomes_cartographer.zip -d /root/bags/
 
 # Source the workspace
 # source /root/catkin_ws/devel/setup.bash
